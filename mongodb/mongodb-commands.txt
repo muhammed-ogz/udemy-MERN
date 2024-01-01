@@ -1,0 +1,44 @@
+db.instructors.find().count();  
+bu bize kaç tane kayıt olduğunu söyleyecektir.
+
+db.instructors.find()
+kayıtları gösterecektir.
+
+use xxx;
+geçilecek veritabanını gösterir.
+
+show.dbs;
+veritabanlarını gösterir.
+
+db.instructors.findOne();
+gelen sonuçlardan bir tanesini getirecektir.
+
+db.instructors.find({},{name:1,rating:1});
+gelen sonuçlar içerisinden sadece name ve rating sonuçlarını dönecektir.
+
+komutu girdiğimizde gelen sonuçlar şu şekildedir : 
+[
+  {
+    _id: ObjectId("65884299161dc09a7421f908"),
+    name: 'Mustafa Murat Coşkun',
+    rating: 4.5
+  },
+  {
+    _id: ObjectId("658846c6161dc09a7421f909"),
+    name: 'Mert Toker',
+    rating: 4.5
+  },
+  {
+    _id: ObjectId("658846c6161dc09a7421f90a"),
+    name: 'Can Kemer',
+    rating: 4.2
+  },
+  {
+    _id: ObjectId("658846c6161dc09a7421f90b"),
+    name: 'Turgay Altın',
+    rating: 4.6
+  }
+]
+
+görüldüğü üzere id değerini de otomatik olarak getirdi. mongoDB bizim için ID değerini otomatik olarak sunuyor.
+
